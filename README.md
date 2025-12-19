@@ -51,14 +51,16 @@ Um objeto com as seguintes propriedades:
 const validateCreditCard = require('./src/index');
 
 // Exemplos de uso
-console.log(validateCreditCard('4111111111111111')); // { valid: true, bandeira: 'Visa' }
-console.log(validateCreditCard('5500000000000004')); // { valid: true, bandeira: 'Mastercard' }
+console.log(validateCreditCard('4929 7489 0788 8931')); // { valid: true, bandeira: 'Visa' }
+console.log(validateCreditCard('5330 1215 4455 5323')); // { valid: true, bandeira: 'Mastercard' }
 console.log(validateCreditCard('3415 918665 02780')); // { valid: true, bandeira: 'American Express' }
-console.log(validateCreditCard('4011 918665 02780')); // { valid: true, bandeira: 'Elo' }
+console.log(validateCreditCard('3809 297503 5018')); // { valid: true, bandeira: 'Diners Club' }
 console.log(validateCreditCard('6062 8205 3422 8922')); // { valid: true, bandeira: 'Hipercard' }
 console.log(validateCreditCard('2014 2012996 3853')); // { valid: true, bandeira: 'EnRoute' }
+console.log(validateCreditCard('6011 0677 1562 4717')); // { valid: true, bandeira: 'Discover' }
 console.log(validateCreditCard('86999 0179 75557 6')); // { valid: true, bandeira: 'Voyager' }
 console.log(validateCreditCard('5072 8979 6045 9601')); // { valid: true, bandeira: 'Aura' }
+console.log(validateCreditCard('3567 3298 5722 9720')); // { valid: true, bandeira: 'JCB' }
 ```
 
 ## Bandeiras Suportadas
